@@ -1,0 +1,206 @@
+/* font */
+
+@font-face {
+	font-family: "CreatoDisplay-Bold";
+	src: url(../font/CreatoDisplay-Bold.otf) format(truetype);
+}
+@font-face {
+	font-family: "CreatoDisplay-regular";
+	src: url(../font/CreatoDisplay-Regular.otf) format(truetype);
+}
+
+/* All in Body */
+
+body {
+	background-color: rgb(7, 7, 7);
+}
+
+/* Style the header */
+header {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0)
+	); /* Warna latar belakang header */
+	color: #fff; /* Warna teks */
+	text-align: center;
+	padding: 0px 5px 10px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	transition: top 0.3s;
+}
+
+/* Style the navigation */
+nav ul {
+	display: flex; /* Membuat daftar menjadi flex container */
+	justify-content: space-between; /* Mengatur ruang antara elemen */
+	padding: 0;
+}
+
+nav h2 {
+	font-size: 19px;
+	margin: 4px 0 10px 0;
+}
+
+nav li {
+	flex: 1; /* Membagi ruang secara merata antara tiga kolom */
+	text-align: center;
+	margin-top: 5px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+nav li:nth-child(1) {
+	text-align: left;
+	padding-left: 8px;
+}
+nav li:nth-child(2) {
+	text-align: center;
+	font-size: 11px;
+	margin: auto;
+	margin-right: 0px;
+	text-shadow: 0px 0px 5px black;
+	flex: 1;
+}
+nav li:nth-child(3) {
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 15px;
+}
+.flex {
+	display: flex;
+	flex: 2;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	padding: 4px;
+	font-size: 10px;
+	transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+nav a:hover {
+	background-color: #555; /* Warna latar belakang saat dihover */
+}
+
+/* akhir dari desain header */
+
+/* Hero Image */
+
+.heroimg {
+	background-image: url(../img/hero/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	max-width: 100%;
+	height: auto;
+	color: #ddd;
+	text-align: center;
+}
+
+.heroimg img {
+	margin-top: 110px;
+	border-radius: 60px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.heroimg .bungkus {
+	margin-top: 40px;
+	display: block;
+	width: 100%;
+	height: 65px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	background: linear-gradient(to top, rgb(7, 7, 7), rgba(7, 7, 7, 0));
+}
+.heroimg h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.heroimg p {
+	font-size: 0.75rem;
+	margin: 19px;
+}
+/* ini akhir dari hero image */
+
+/* Desain kecil yang mungkin ngaruh */
+.heroimg h1 span {
+	font-size: 37px;
+}
+nav li h2 span {
+	font-size: 23px;
+}
+#biography span {
+	font-size: 31px;
+}
+h5 span {
+	font-size: 20px;
+}
+
+/* ini Bagian Biography */
+
+h5 {
+	color: #e7e300;
+}
+
+#biography .container {
+	display: flex;
+	justify-content: space-between;
+	color: #ddd;
+	margin-top: 15px;
+}
+#biography {
+	margin: 50px 30px;
+}
+#biography div {
+	flex: 1;
+}
+#biography h2 {
+	font-size: 26px;
+}
+#biography h2:nth-child(2) {
+	margin-bottom: 30px;
+}
+
+.container .isi {
+	font-size: 15px;
+	font-family: "CreatoDisplay-regular";
+}
+#biography a {
+	font-size: 12px;
+	color: #ddd;
+	text-decoration: none;
+}
+
+/* ini akhir biography */
+
+/* ini bagian sertificate */
+
+#sertificate {
+	margin: 30px 30px;
+}
+.gallery {
+	display: block;
+	align-items: center;
+	text-align: center;
+}
+.gallery li {
+	list-style: none;
+	margin: 11px;
+	display: inline-block;
+}
+
+/* ini minimize */
+
+.minimize {
+	display: none;
+}
+
+/* ini separator */
+
+.separator {
+	width: 94%;
+	height: 0.4px;
+	background-color: rgba(254, 254, 254, 0.1);
+	margin: 8px auto;
+}
